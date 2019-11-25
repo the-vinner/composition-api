@@ -34,6 +34,7 @@ export const onBeforeUpdate = createLifeCycle('beforeUpdate');
 export const onUpdated = createLifeCycle('updated');
 export const onBeforeUnmount = createLifeCycle('beforeDestroy');
 // only one event will be fired between destroyed and deactivated when an unmount occurs
+export const onServerPrefetch = createLifeCycle('serverPrefetch');
 export const onUnmounted = createLifeCycles(['destroyed', 'deactivated'], genName('unmounted'));
 export const onErrorCaptured = createLifeCycle('errorCaptured');
 export const onActivated = createLifeCycle('activated');
